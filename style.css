@@ -4,7 +4,7 @@
     background-color: beige;
     box-sizing: border-box;
 }
-.container{
+/* .container{
     height: 100vh;
     width: 100vw;
     border: 5px solid black;
@@ -18,7 +18,7 @@
     margin: 5px;
     position: relative;
     /* Animation */
-    animation-name: rightmovement;
+   /* animation-name: rightmovement;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
@@ -32,6 +32,26 @@
     to {
 top: 0px;
 left: 1000px;
+    }
+    
+} */
+.joao{
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    position: relative;
+    display: flex;
+    animation-iteration-count: infinite;
+}
+@keyframes movement {
+    from{
+top: 0;
+left: 0;
+    }
+    to{
+        top:0;
+        left: 1000px;
     }
     
 }
