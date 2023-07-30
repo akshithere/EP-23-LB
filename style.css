@@ -39,10 +39,12 @@ left: 1000px;
     animation-name: movement;
     animation-duration: 5s;
     animation-delay: 2s;
-    animation-timing-function: ease;
+    animation-timing-function: cubic-bezier(0.07, 0.68, 0.71, 0.11);
     position: relative;
     display: flex;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    animation-fill-mode: both;
 }
 @keyframes movement {
     from{
